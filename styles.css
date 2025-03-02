@@ -1,0 +1,186 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
+}
+/* Encabezado fijo con degradado */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #444, #666);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 24px; /* Reducido para un formato más pequeño */
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 12px; /* Ajustado para mantener espacio consistente */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px; /* Reducido para un texto más pequeño */
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px 80px;
+    background: #666;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Secciones */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #e0e0e0;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Estilos para la sección de funcionalidades */
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.feature-content {
+    transition: opacity 0.3s ease;
+}
+
+.feature-description {
+    display: none;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #555;
+    opacity: 0;
+}
+
+.feature:hover .feature-content {
+    opacity: 0;
+}
+
+.feature:hover .feature-description {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #555;
+}
+
+/* Beneficios */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    background: #888;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #777;
+}
+
+.btn-dark {
+    background: #444;
+}
+
+.btn-dark:hover {
+    background: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #444;
+    color: white;
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+    }
+}
